@@ -1,0 +1,15 @@
+= form_for([@teacher, @rating]) do |f|
+  %p
+    = f.label :name, "Easiness"
+    = f.text_field :easiness
+  %p
+    = f.label :name, "Helpfulness"
+    = f.text_field :helpfulness
+  %p
+    = f.label :name, "Clarity"
+    = f.text_field :clarity
+  %p
+    = f.label :commet
+    = f.text_area :comment
+  %p
+    = f.button :submit, class: "btn btn-primary"

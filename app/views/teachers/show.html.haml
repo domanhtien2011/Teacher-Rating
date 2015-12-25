@@ -1,0 +1,17 @@
+= link_to("Back", school_url(@school))
+
+%p= link_to "Rate teacher", new_teacher_rating_path(@teacher, @rating), class: "btn btn-default"
+
+= @teacher.ratings.each do |rating|
+  %p
+    Clarity:
+    \#{rating.clarity}
+  %p
+    Helpfulness:
+    \#{rating.helpfulness}
+  %p
+    Easiness:
+    \#{rating.easiness}
+  %p
+    Comment:
+    \#{rating.comment}

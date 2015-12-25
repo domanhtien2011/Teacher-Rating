@@ -1,0 +1,12 @@
+= form_for([@school, @teacher]) do |f|
+  %p
+    = f.label :name, "First Name"
+    = f.text_field :firstName
+  %p
+    = f.label :name, "Last Name"
+    = f.text_field :lastName
+  %p
+    = f.label :name, "Middle Name"
+    = f.text_field :middleName
+  %p
+    = f.button :submit, class: "btn btn-primary"

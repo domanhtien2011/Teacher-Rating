@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
-  resources :schools
+  devise_for :users
+  resources :schools do
+    resources :teachers
+  end
+
+  resources :teachers do
+    resources :ratings
+  end
+
+  root 'schools#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
