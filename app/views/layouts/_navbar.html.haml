@@ -1,0 +1,36 @@
+%nav.navbar.navbar-default
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"%aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+      %a.navbar-brand{:href => root_path} Đánh Giá Giáo Viên
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          %a{:href => "#"} Link
+      %form.navbar-form.navbar-right{:role => "search"}
+        .form-group
+          %input.form-control{:placeholder => "Trường hoặc GV...", :type => "text"}
+        %button.btn.btn-default{:type => "submit"} Tìm
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "#"} Link
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            Tài Khoản
+            %span.caret
+              %ul.dropdown-menu
+                - if !user_signed_in?
+                  %li
+                    = link_to("Đăng Nhập", new_user_session_url)
+                  %li
+                    = link_to("Đăng Ký", new_user_registration_url)
+                - else
+                  %li
+                    = link_to("Thoát",destroy_user_session_url, method: :delete)
+                  %li.divider{:role => "separator"}
+                  %li
+                    %a{:href => "#"} Separated link
+/ /.navbar-collapse
+/ /.container-fluid
