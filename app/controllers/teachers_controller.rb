@@ -2,7 +2,6 @@ class TeachersController < ApplicationController
   before_action :find_school
   before_action :find_teacher, only: [:show, :edit, :update, :destroy]
 
-
   def show
   end
 

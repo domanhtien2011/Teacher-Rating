@@ -9,10 +9,11 @@
       %ul.nav.navbar-nav
         %li
           %a{:href => "#"} Link
-      %form.navbar-form.navbar-right{:role => "search"}
-        .form-group
-          %input.form-control{:placeholder => "Trường hoặc GV...", :type => "text"}
-        %button.btn.btn-default{:type => "submit"} Tìm
+      = form_tag search_schools_path, method: :get, class: "navbar-form navbar-right", role: "search" do
+        %p
+          = text_field_tag :search,
+            params[:search], class: "form-control"
+          = submit_tag "Search", name: nil, class: "btn btn-default"
       %ul.nav.navbar-nav.navbar-right
         %li
           %a{:href => "#"} Link

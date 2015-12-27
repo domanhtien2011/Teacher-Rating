@@ -1,0 +1,6 @@
+- @schools.each do |school|
+  = school.name
+  = link_to 'Show', school
+  = link_to 'Edit', edit_school_path(school)
+  = link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' }
+  %br/

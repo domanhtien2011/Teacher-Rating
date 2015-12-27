@@ -7,6 +7,8 @@ gem 'rails', '4.2.5'
 gem 'sqlite3'
 # Haml
 gem 'haml'
+# Searck kick
+gem 'searchkick'
 # Boostrap
 gem 'bootstrap-sass'
 # Devise

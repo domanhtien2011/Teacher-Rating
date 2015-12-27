@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
+
   resources :schools do
+    collection do
+      get 'search'
+    end
     resources :teachers
   end
 

@@ -1,14 +1,18 @@
 class SchoolsController < ApplicationController
   before_action :set_school, only: [:show, :edit, :update, :destroy]
 
-  # GET /schools
-  # GET /schools.json
+  def search
+    if params[:search].present?
+      @schools = School.search(params[:search])
+    else
+      @schools = School.all
+    end
+  end
+
   def index
     @schools = School.all
   end
 
-  # GET /schools/1
-  # GET /schools/1.json
   def show
   end
 
