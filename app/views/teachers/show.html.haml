@@ -4,14 +4,24 @@
 
 = @teacher.ratings.each do |rating|
   %p
-    Clarity:
-    \#{rating.clarity}
+    Clarity
+    .star-rating{"data-score" => rating.clarity}
   %p
-    Helpfulness:
-    \#{rating.helpfulness}
+    Helpfulness
+    .star-rating{"data-score" => rating.helpfulness}
   %p
-    Easiness:
-    \#{rating.easiness}
+    Easiness
+    .star-rating{"data-score" => rating.easiness}
   %p
     Comment:
     \#{rating.comment}
+  %hr/
+
+:javascript
+    $('.star-rating').raty({
+      path: '/assets/',
+      readOnly: true,
+      score: function() {
+            return $(this).attr('data-score');
+    }
+  });
