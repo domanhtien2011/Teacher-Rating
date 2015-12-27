@@ -1,26 +1,34 @@
-= form_for([@teacher, @rating]) do |f|
-  %p
+= form_for([@teacher, @rating], :html => {:class => "form-horizontal center"}) do |f|
+  .form-group
+    = f.label :name, "Easiness", class: "col-md-2 control-label"
+    .col-md-3
+      = f.select(:easiness, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
     / = f.text_field :easiness
-    #star-rating
-    = f.label :name, "Easiness"
-  %p
-    #star-rating
-    = f.label :name, "Helpfulness"
+    / #star-rating
+  .form-group
+    / #star-rating
+    = f.label :name, "Helpfulness", class: "col-md-2 control-label"
     / = f.text_field :helpfulness
-  %p
-    #star-rating
-    = f.label :name, "Clarity"
+    .col-md-3
+      = f.select(:helpfulness, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
+  .form-group
+    / #star-rating
+    = f.label :name, "Clarity", class: "col-md-2 control-label"
     / = f.text_field :clarity
-  %p
-    = f.label :commet
-    = f.text_area :comment
-  %p
-    = f.button :submit, class: "btn btn-primary"
+    .col-md-3
+      = f.select(:clarity, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
+  .form-group
+    = f.label :comment, class: "col-md-2 control-label"
+    .col-md-3
+      = f.text_area :comment, {:rows => "10", :cols => "50"}
+  .form-group
+    .col-md-3.col-md-offset-2
+      = f.button :submit, class: "btn btn-primary"
 
-:javascript
-  $('#star-rating').raty({
-    path: '/assets/',
-    scoreName: 'easiness[rating]',
-    scoreName: 'helpfulness[rating]',
-    scoreName: 'clarity[rating]'
-  });
+/ :javascript
+/   $('#star-rating').raty({
+/     path: '/assets/',
+/     scoreName: 'easiness[rating]',
+/     scoreName: 'helpfulness[rating]',
+/     scoreName: 'clarity[rating]'
+/   });
