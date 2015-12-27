@@ -15,7 +15,9 @@
   %p
     Comment:
     \#{rating.comment}
+  = link_to("Delete Rating", teacher_rating_url(@teacher, rating), method: :delete, data: { confirm: "Are you sure?" })
   %hr/
+
 
 :javascript
     $('.star-rating').raty({

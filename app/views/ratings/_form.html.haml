@@ -1,15 +1,26 @@
 = form_for([@teacher, @rating]) do |f|
   %p
+    / = f.text_field :easiness
+    #star-rating
     = f.label :name, "Easiness"
-    = f.text_field :easiness
   %p
+    #star-rating
     = f.label :name, "Helpfulness"
-    = f.text_field :helpfulness
+    / = f.text_field :helpfulness
   %p
+    #star-rating
     = f.label :name, "Clarity"
-    = f.text_field :clarity
+    / = f.text_field :clarity
   %p
     = f.label :commet
     = f.text_area :comment
   %p
     = f.button :submit, class: "btn btn-primary"
+
+:javascript
+  $('#star-rating').raty({
+    path: '/assets/',
+    scoreName: 'easiness[rating]',
+    scoreName: 'helpfulness[rating]',
+    scoreName: 'clarity[rating]'
+  });
