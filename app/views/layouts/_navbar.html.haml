@@ -9,6 +9,7 @@
       %ul.nav.navbar-nav
         %li
           %a{:href => "#"} Link
+      / - if url == root_path
       = form_tag search_schools_path, method: :get, class: "navbar-form navbar-right", role: "search" do
         %p
           = text_field_tag :search,

@@ -3,6 +3,11 @@ class TeachersController < ApplicationController
   before_action :find_teacher, only: [:show, :edit, :update, :destroy]
 
   def show
+    # if @ratings.blank?
+    #   @avg_review = 0
+    # else
+    #   @avg_review = @teacher.ratings.average(:clarity).round(2)
+    # end
   end
 
   def new
@@ -34,6 +39,6 @@ class TeachersController < ApplicationController
   end
 
   def teacher_params
-    params.require(:teacher).permit(:firstName, :lastName, :middleName, :school_id)
+    params.require(:teacher).permit(:firstName, :lastName, :middleName, :department, :school_id)
   end
 end

@@ -1,12 +1,15 @@
 = form_for([@school, @teacher]) do |f|
   %p
-    = f.label :name, "First Name"
+    = f.label :name, "Tên"
     = f.text_field :firstName
   %p
-    = f.label :name, "Last Name"
+    = f.label :name, "Họ"
     = f.text_field :lastName
   %p
-    = f.label :name, "Middle Name"
+    = f.label :name, "Tên Đệm"
     = f.text_field :middleName
+  %p
+    = f.label :name, "Khoa"
+    = f.text_field :department
   %p
     = f.button :submit, class: "btn btn-primary"

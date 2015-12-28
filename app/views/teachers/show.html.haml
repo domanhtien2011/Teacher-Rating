@@ -1,6 +1,18 @@
-= link_to("Back", school_url(@school))
+%h1= @teacher.to_s
+%h3 Khoa #{@teacher.department} tại trường |
+#{link_to(@school.name, school_path(@school))} |
+
 
 %p= link_to "Rate teacher", new_teacher_rating_path(@teacher, @rating), class: "btn btn-default"
+
+%p Average Clarity
+.star-rating{"data-score" => @teacher.ratings.average(:clarity).round(3)}
+%p Average Easiness
+.star-rating{"data-score" => @teacher.ratings.average(:easiness).round(3)}
+%p Average Helpfulness
+.star-rating{"data-score" => @teacher.ratings.average(:helpfulness).round(3)}
+%hr/
+%br/
 
 = @teacher.ratings.each do |rating|
   %p
