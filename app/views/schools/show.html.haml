@@ -1,6 +1,5 @@
-%p
-  %strong Name:
-  = @school.name
+%h1= @school.name
+= link_to('Website', @school.website, target: '_blank')
 
 / Show all the teachers
 - @school.teachers.each do |teacher|

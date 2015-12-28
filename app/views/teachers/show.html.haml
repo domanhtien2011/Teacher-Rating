@@ -1,32 +1,48 @@
-%h1= @teacher.to_s
-%h3 Khoa #{@teacher.department} tại trường |
-#{link_to(@school.name, school_path(@school))} |
+.text-center
+  %h1
+    Gv. |
+    = @teacher.to_s
+  %h3 Khoa #{@teacher.department} |
+  #{link_to(@school.name, school_path(@school))} |
+  %hr/
+  %h4 Đánh Giá Trung Bình
+  .star-rating.img-responsive{"data-score" => ((@teacher.ratings.average(:clarity) + @teacher.ratings.average(:helpfulness) + @teacher.ratings.average(:easiness)) / 3).round(3)}
+  %br/
+  %p= link_to "Đánh Giá", new_teacher_rating_path(@teacher, @rating), class: "btn btn-info"
 
-
-%p= link_to "Rate teacher", new_teacher_rating_path(@teacher, @rating), class: "btn btn-default"
-
-%p Average Clarity
-.star-rating{"data-score" => @teacher.ratings.average(:clarity).round(3)}
-%p Average Easiness
-.star-rating{"data-score" => @teacher.ratings.average(:easiness).round(3)}
-%p Average Helpfulness
-.star-rating{"data-score" => @teacher.ratings.average(:helpfulness).round(3)}
+  %hr/
+  %h3 Tổng Đánh Giá
+  %h4 Dễ Hiểu
+  %span.star-rating.img-responsive{"data-score" => @teacher.ratings.average(:clarity).round(3)}
+  %br/
+  %h4 Nhiệt Tình
+  %span.star-rating.img-responsive{"data-score" => @teacher.ratings.average(:helpfulness).round(3)}
+  %br/
+  %h4 Bài Kiểm Tra
+  %span.star-rating.img-responsive{"data-score" => @teacher.ratings.average(:easiness).round(3)}
 %hr/
-%br/
+
+/ All the ratings
+%h2.text-center
+  = @teacher.ratings.length
+  Đánh Giá
+%hr/
 
 = @teacher.ratings.each do |rating|
-  %p
-    Clarity
-    .star-rating{"data-score" => rating.clarity}
-  %p
-    Helpfulness
-    .star-rating{"data-score" => rating.helpfulness}
-  %p
-    Easiness
-    .star-rating{"data-score" => rating.easiness}
-  %p
-    Comment:
-    \#{rating.comment}
+  .row
+    .col-sm-1
+      = rating.created_at.strftime("%d-%m-%Y")
+    .col-sm-2
+      Dễ Hiểu
+      .star-rating{"data-score" => rating.clarity}
+      Nhiệt Tình
+      .star-rating{"data-score" => rating.helpfulness}
+      Bài Kiểm Tra
+      .star-rating{"data-score" => rating.easiness}
+    .col-sm-9
+      Comment
+      %p= rating.comment
+
   = link_to("Delete Rating", teacher_rating_url(@teacher, rating), method: :delete, data: { confirm: "Are you sure?" })
   %hr/
 
