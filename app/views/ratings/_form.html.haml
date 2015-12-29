@@ -1,34 +1,51 @@
-= form_for([@teacher, @rating], :html => {:class => "form-horizontal center"}) do |f|
+= form_for([@teacher, @rating], :html => { :class => "form-horizontal center", :multipart => true }) do |f|
+
+  / Show errors
+  .errors
+    - if @rating.errors.any?
+      %ul
+        - @rating.errors[:user_id].each do |msg|
+          %li= msg
+  .text-center
+    %h3 Thông tin cá nhân
+    %br/
   .form-group
-    = f.label :name, "Easiness", class: "col-md-2 control-label"
-    .col-md-3
-      = f.select(:easiness, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
-    / = f.text_field :easiness
-    / #star-rating
+    = f.label :name, "Môn Học", class: "col-sm-3 control-label"
+    .col-sm-3
+      = f.text_field :subject
+
   .form-group
-    / #star-rating
-    = f.label :name, "Helpfulness", class: "col-md-2 control-label"
-    / = f.text_field :helpfulness
-    .col-md-3
-      = f.select(:helpfulness, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
+    = f.label :name, "Điểm Môn Học", class: "col-sm-3 control-label"
+    .col-sm-3
+      = f.select :gradeReceived, [ "N/A", "A", "B", "C", "D", "F"], class: "form-control"
+
   .form-group
-    / #star-rating
-    = f.label :name, "Clarity", class: "col-md-2 control-label"
-    / = f.text_field :clarity
-    .col-md-3
+    = f.label :name, "Năm Học", class: "col-sm-3 control-label"
+    .col-sm-3
+      = f.text_field :schoolYear, placeholder: "Ghi số, ví dụ 2013..."
+  %hr/
+  .text-center
+    %h3 Đánh Giá Giáo Viên
+    %br/
+  .form-group
+    = f.label :name, "Dễ Hiểu", class: "col-sm-3 control-label"
+    .col-sm-3
       = f.select(:clarity, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
+
   .form-group
-    = f.label :comment, class: "col-md-2 control-label"
-    .col-md-3
+    = f.label :name, "Nhiệt Tình", class: "col-sm-3 control-label"
+    .col-sm-3
+      = f.select(:helpfulness, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
+
+  .form-group
+    = f.label :name, "Bài Kiểm Tra", class: "col-sm-3 control-label"
+    .col-sm-3
+      = f.select(:easiness, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
+
+  .form-group
+    = f.label :name, "Nhận Xét", class: "col-sm-3 control-label"
+    .col-sm-3
       = f.text_area :comment, {:rows => "10", :cols => "50"}
   .form-group
-    .col-md-3.col-md-offset-2
-      = f.button :submit, class: "btn btn-primary"
-
-/ :javascript
-/   $('#star-rating').raty({
-/     path: '/assets/',
-/     scoreName: 'easiness[rating]',
-/     scoreName: 'helpfulness[rating]',
-/     scoreName: 'clarity[rating]'
-/   });
+    .col-sm-3.col-sm-offset-1
+      = f.submit "Đánh Giá", class: "btn btn-info"

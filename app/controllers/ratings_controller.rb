@@ -11,9 +11,12 @@ class RatingsController < ApplicationController
   def create
     @rating = current_user.ratings.build(rating_params)
     @rating.teacher_id = @teacher.id
-    @rating.save
 
-    redirect_to school_teacher_path(@teacher.school, @teacher)
+    if @rating.save
+      redirect_to school_teacher_path(@teacher.school, @teacher)
+    else
+      render 'new'
+    end
   end
 
   def destroy
@@ -32,6 +35,6 @@ class RatingsController < ApplicationController
   end
 
   def rating_params
-    params.require(:rating).permit(:easiness, :helpfulness, :clarity, :comment, :teacher_id, :school_id, :user_id)
+    params.require(:rating).permit(:easiness, :helpfulness, :clarity, :comment, :schoolYear, :gradeReceived ,:teacher_id, :subject, :school_id, :user_id)
     end
 end
