@@ -1,6 +1,8 @@
-- @schools.each do |school|
-  = school.name
-  = link_to 'Show', school
-  = link_to 'Edit', edit_school_path(school)
-  = link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' }
-  %br/
+.text-center
+  - @schools.each do |school|
+    = link_to school.name, school_path(school)
+    - if user_signed_in?
+      -if current_user.email == "domanhtien2011@gmail.com"
+        = link_to 'Edit', edit_school_path(school)
+        = link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' }
+    %br/

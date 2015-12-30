@@ -3,11 +3,14 @@ class TeachersController < ApplicationController
   before_action :find_teacher, only: [:show, :edit, :update, :destroy]
 
   def show
-    # if @ratings.blank?
-    #   @avg_review = 0
-    # else
-    #   @avg_review = @teacher.ratings.average(:clarity).round(2)
-    # end
+  end
+
+  def search
+    if params[:search].present?
+      @teachers = @school.teachers.search(params[:search])
+    else
+      @teachers = @school.teachers.all
+    end
   end
 
   def new

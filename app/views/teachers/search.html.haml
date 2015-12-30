@@ -1,0 +1,5 @@
+- @school.teachers.each do |teacher|
+  %p
+  = link_to teacher.to_s, school_teacher_path(@school, teacher)
+  / %p= link_to("Edit", edit_school_teacher_path(@school, teacher))
+  / %p= link_to("Show", school_teacher_path(@school, teacher))

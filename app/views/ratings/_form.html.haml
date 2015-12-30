@@ -6,23 +6,30 @@
       %ul
         - @rating.errors[:user_id].each do |msg|
           %li= msg
+        - @rating.errors[:subject].each do |msg|
+          %li= msg
+        - @rating.errors[:schoolYear].each do |msg|
+          %li= msg
   .text-center
     %h3 Thông tin cá nhân
     %br/
   .form-group
     = f.label :name, "Môn Học", class: "col-sm-3 control-label"
     .col-sm-3
-      = f.text_field :subject
-
-  .form-group
-    = f.label :name, "Điểm Môn Học", class: "col-sm-3 control-label"
-    .col-sm-3
-      = f.select :gradeReceived, [ "N/A", "A", "B", "C", "D", "F"], class: "form-control"
+      = f.text_field :subject, placeholder: "Triết học..."
+      .help-block (Bắt buộc)
 
   .form-group
     = f.label :name, "Năm Học", class: "col-sm-3 control-label"
     .col-sm-3
       = f.text_field :schoolYear, placeholder: "Ghi số, ví dụ 2013..."
+      .help-block (Bắt buộc)
+
+  .form-group
+    = f.label :name, "Điểm", class: "col-sm-3 control-label"
+    .col-sm-6
+      = f.select :gradeReceived, [ "N/A", "A", "B", "C", "D", "F"], class: "form-control"
+      .help-block (Chọn N/A nếu muốn bí mật)
   %hr/
   .text-center
     %h3 Đánh Giá Giáo Viên

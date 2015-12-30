@@ -28,10 +28,22 @@
   Đánh Giá
 %hr/
 
-= @teacher.ratings.each do |rating|
+= @teacher.ratings.order("created_at DESC").each do |rating|
   .row
-    .col-sm-1
-      = rating.created_at.strftime("%d-%m-%Y")
+    .col-sm-3
+      %p= rating.created_at.strftime("%d-%m-%Y")
+      %p
+        %strong Môn Học: |
+        = rating.subject
+
+      %p
+        %strong Năm Học: |
+        = rating.schoolYear
+      - if rating.gradeReceived != "N/A"
+        %p
+          %strong Điểm: |
+          = rating.gradeReceived
+
     .col-sm-2
       Dễ Hiểu
       .star-rating{"data-score" => rating.clarity}
@@ -39,11 +51,13 @@
       .star-rating{"data-score" => rating.helpfulness}
       Bài Kiểm Tra
       .star-rating{"data-score" => rating.easiness}
-    .col-sm-9
-      Comment
+    .col-sm-7
+      %strong Nhận Xét
       %p= rating.comment
 
-  = link_to("Delete Rating", teacher_rating_url(@teacher, rating), method: :delete, data: { confirm: "Are you sure?" })
+  -if user_signed_in?
+    - if current_user.email == "domanhtien2011@gmail.com"
+      = link_to("Delete Rating", teacher_rating_url(@teacher, rating), method: :delete, data: { confirm: "Are you sure?" })
   %hr/
 
 

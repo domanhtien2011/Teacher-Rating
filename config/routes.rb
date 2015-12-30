@@ -5,7 +5,11 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
-    resources :teachers
+    resources :teachers do
+      collection do
+        get 'search'
+      end
+    end
   end
 
   resources :teachers do
