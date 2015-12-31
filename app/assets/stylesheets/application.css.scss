@@ -21,6 +21,34 @@
 body {
     font-family: 'Open Sans', sans-serif;
     padding-top: 70px;
+    background: #00adee;
+    a {
+        color: white;
+    }
+
+}
+
+.navbar.navbar-default {
+    background: #333;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #20AAEE;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #20AAEE;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
 }
 
 label {

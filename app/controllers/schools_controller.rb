@@ -3,9 +3,10 @@ class SchoolsController < ApplicationController
 
   def search
     if params[:search].present?
-      @schools = School.search(params[:search])
+      # Just search the field name
+      @schools = School.search(params[:search], fields: [:name])
     else
-      @schools = School.all
+      @schools = []
     end
   end
 

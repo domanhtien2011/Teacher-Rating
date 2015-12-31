@@ -4,61 +4,70 @@
     = @teacher.to_s
   %h3 Khoa #{@teacher.department} |
   #{link_to(@school.name, school_path(@school))} |
+  = link_to("Trang Trước", school_path(@school), class: "btn btn-default btn-xs")
+  = link_to("Trang Chủ", root_url, class: "btn btn-default btn-xs")
   %hr/
-  %h4 Đánh Giá Trung Bình
-  .star-rating.img-responsive{"data-score" => ((@teacher.ratings.average(:clarity) + @teacher.ratings.average(:helpfulness) + @teacher.ratings.average(:easiness)) / 3).round(3)}
-  %br/
-  %p= link_to "Đánh Giá", new_teacher_rating_path(@teacher, @rating), class: "btn btn-info"
+  - if @teacher.ratings.blank?
+    %h4 Chưa Có Đánh Giá Trunh Bình
+    %br/
+  - else
+    %h4 Đánh Giá Trung Bình
+    .star-rating.img-responsive{"data-score" => ((@teacher.ratings.average(:clarity) + @teacher.ratings.average(:helpfulness) + @teacher.ratings.average(:easiness)) / 3).round(3)}
+    %br/
+    %p= link_to "Đánh Giá", new_teacher_rating_path(@teacher, @rating), class: "btn btn-warning btn-sm"
 
   %hr/
   %h3 Tổng Đánh Giá
-  %h4 Dễ Hiểu
-  %span.star-rating.img-responsive{"data-score" => @teacher.ratings.average(:clarity).round(3)}
-  %br/
-  %h4 Nhiệt Tình
-  %span.star-rating.img-responsive{"data-score" => @teacher.ratings.average(:helpfulness).round(3)}
-  %br/
-  %h4 Bài Kiểm Tra
-  %span.star-rating.img-responsive{"data-score" => @teacher.ratings.average(:easiness).round(3)}
-%hr/
-
-/ All the ratings
-%h2.text-center
-  = @teacher.ratings.length
-  Đánh Giá
-%hr/
-
-= @teacher.ratings.order("created_at DESC").each do |rating|
-  .row
-    .col-sm-3
-      %p= rating.created_at.strftime("%d-%m-%Y")
-      %p
-        %strong Môn Học: |
-        = rating.subject
-
-      %p
-        %strong Năm Học: |
-        = rating.schoolYear
-      - if rating.gradeReceived != "N/A"
-        %p
-          %strong Điểm: |
-          = rating.gradeReceived
-
-    .col-sm-2
-      Dễ Hiểu
-      .star-rating{"data-score" => rating.clarity}
-      Nhiệt Tình
-      .star-rating{"data-score" => rating.helpfulness}
-      Bài Kiểm Tra
-      .star-rating{"data-score" => rating.easiness}
-    .col-sm-7
-      %strong Nhận Xét
-      %p= rating.comment
-
-  -if user_signed_in?
-    - if current_user.email == "domanhtien2011@gmail.com"
-      = link_to("Delete Rating", teacher_rating_url(@teacher, rating), method: :delete, data: { confirm: "Are you sure?" })
+  - if !@teacher.ratings.blank?
+    %h4 Dễ Hiểu
+    %span.star-rating.img-responsive{"data-score" => @teacher.ratings.average(:clarity).round(3)}
+    %br/
+    %h4 Nhiệt Tình
+    %span.star-rating.img-responsive{"data-score" => @teacher.ratings.average(:helpfulness).round(3)}
+    %br/
+    %h4 Bài Kiểm Tra
+    %span.star-rating.img-responsive{"data-score" => @teacher.ratings.average(:easiness).round(3)}
   %hr/
+
+  / All the ratings
+  %h2.text-center
+    = @teacher.ratings.length
+    Đánh Giá
+  %hr/
+
+  = @teacher.ratings.order("created_at DESC").each do |rating|
+    .row
+      .col-sm-3
+        %p= rating.created_at.strftime("%d-%m-%Y")
+        %p
+          %strong Môn Học: |
+          = rating.subject
+
+        %p
+          %strong Năm Học: |
+          = rating.schoolYear
+        - if rating.gradeReceived != "N/A"
+          %p
+            %strong Điểm: |
+            = rating.gradeReceived
+
+      .col-sm-2
+        Dễ Hiểu
+        .star-rating{"data-score" => rating.clarity}
+        Nhiệt Tình
+        .star-rating{"data-score" => rating.helpfulness}
+        Bài Kiểm Tra
+        .star-rating{"data-score" => rating.easiness}
+      .col-sm-7
+        %strong Nhận Xét
+        %p= rating.comment
+
+    -if user_signed_in?
+      - if current_user.email == "domanhtien2011@gmail.com"
+        = link_to("Delete Rating", teacher_rating_url(@teacher, rating), method: :delete, data: { confirm: "Are you sure?" })
+    %hr/
+= link_to("Trang Trước", school_path(@school), class: "btn btn-default btn-xs")
+= link_to("Trang Chủ", root_url, class: "btn btn-default btn-xs")
 
 
 :javascript

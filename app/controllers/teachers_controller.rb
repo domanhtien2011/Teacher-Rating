@@ -7,9 +7,9 @@ class TeachersController < ApplicationController
 
   def search
     if params[:search].present?
-      @teachers = @school.teachers.search(params[:search])
+      @teachers = @school.teachers.search(params[:search], fields: [:lastName, :firstName, :middleName])
     else
-      @teachers = @school.teachers.all
+      @teachers = []
     end
   end
 
