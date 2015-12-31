@@ -1,0 +1,21 @@
+.text-center
+  %h2 Thay Đổi Mật Khẩu
+  = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
+    = devise_error_messages!
+    = f.hidden_field :reset_password_token
+    .form-group
+      = f.label :password, "Mật Khẩu Mới"
+      %br/
+      - if @minimum_password_length
+        %em
+          (Ít nhất #{@minimum_password_length} ký tự)
+        %br/
+      = f.password_field :password, autofocus: true, autocomplete: "off", input_html: { class: 'form-control' }
+    .form-group
+      = f.label :password_confirmation, "Xác Nhận Lại Mật Khẩu Mới"
+      %br/
+      = f.password_field :password_confirmation, autocomplete: "off", input_html: { class: 'form-control' }
+    .actions
+      = f.submit "Đổi Mật Khẩu", class: "btn btn-success btn-sm"
+  %small
+    = render "devise/shared/links"

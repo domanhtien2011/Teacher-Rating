@@ -1,4 +1,4 @@
-%nav.navbar.navbar-default
+%nav.navbar.navbar-default.navbar-fixed-top
   .container-fluid
     .navbar-header
       %button.navbar-toggle.collapsed{"%aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
@@ -10,7 +10,7 @@
         %li
           / %a{:href => "#"} Link
       /- if url == root_path
-      = form_tag search_schools_path, method: :get, class: "navbar-form navbar-right", role: "search" do
+      = form_tag search_schools_path, :id => 'custom-search-input', method: :get, class: "navbar-form navbar-right", role: "search" do
         .input-group
           = text_field_tag :search,
             params[:search], class: "form-control", placeholder: "Tìm trường..."
@@ -27,6 +27,6 @@
           %li
             = link_to("Tài Khoản Của Bạn", edit_user_registration_url)
           %li
-            = link_to("Thoát Ra",destroy_user_session_url, method: :delete)
+            = link_to("Thoát Tài Khoản",destroy_user_session_url, method: :delete)
 / /.navbar-collapse
 / /.container-fluid

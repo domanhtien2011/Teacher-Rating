@@ -1,0 +1,6 @@
+.text-center
+  %p
+    Xin chào #{@resource.email}!
+  %p Tài khoản của bạn vừa bị khóa vì bạn đã có số lần truy cập không thành công vượt mức qui định của chúng tôi.
+  %p Vui lòng bấm vào đường link bên dưới để mở lại tài khoản của bạn:
+  %p= link_to 'Mở lại tài khoản', unlock_url(@resource, unlock_token: @token)

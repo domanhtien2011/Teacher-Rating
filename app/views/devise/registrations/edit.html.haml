@@ -1,0 +1,32 @@
+.text-center
+  %h2
+    Chỉnh Sửa Tài Khoản
+  = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+    = devise_error_messages!
+    .form-group
+      = f.label :name, "Email Mới"
+      %br/
+      = f.email_field :email, autofocus: true, input_html: { class: 'form-control' }
+    - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+      %div
+        Currently waiting confirmation for: #{resource.unconfirmed_email}
+    .form-group
+      = f.label :name, "Mật Khẩu Mới"
+      %i (Bỏ trống nếu không muốn thay đổi mật khẩu)
+      %br/
+      = f.password_field :password, autocomplete: "off", input_html: { class: 'form-control' }
+    .form-group
+      = f.label :name, "Nhập Lại Mật Khẩu Mới"
+      %br/
+      = f.password_field :password_confirmation, autocomplete: "off", input_html: { class: 'form-control' }
+    .form-group
+      = f.label :name, "Mật khẩu hiện tại"
+      %i (Nhập mật khẩu hiện tại để những thay đổi ở trên có hiệu lực)
+      %br/
+      = f.password_field :current_password, autocomplete: "off", input_html: { class: 'form-control' }
+    .actions
+      = f.submit "Cập Nhật", class: "btn btn-success btn-sm"
+  %h3 Hủy Tài Khoản
+  %p
+    Không hài lòng? #{button_to "Xóa Tài Khoản", registration_path(resource_name), data: { confirm: "Bạn có chắc muốn xóa tài khoản này?" }, method: :delete, class: "btn btn-danger btn-xs"}
+  = link_to "Quay lại", :back
