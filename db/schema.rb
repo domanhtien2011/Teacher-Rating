@@ -13,6 +13,8 @@
 
 ActiveRecord::Schema.define(version: 20160105070602) do
 
+>>>>>>> limit
+
   create_table "ratings", force: :cascade do |t|
     t.integer  "clarity"
     t.integer  "helpfulness"
