@@ -1,5 +1,6 @@
-%h1= @school.name
-= link_to('Website', @school.website, target: '_blank')
+.text-center
+  %h1= @school.name
+  %em= link_to('Website', @school.website, target: '_blank')
 
 /Teacher Search Form
 .row
