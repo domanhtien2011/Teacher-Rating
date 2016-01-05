@@ -1,20 +1,35 @@
 class SchoolsController < ApplicationController
   before_action :set_school, only: [:show, :edit, :update, :destroy]
 
-  def search
-    if params[:search].present?
-      # Just search the field name
-      @schools = School.search(params[:search], fields: [:name])
-    else
-      @schools = []
-    end
-  end
+  # def find
+  #   if params[:search].present?
+  #     result = School.search(params[:search], index_name: [School.searchkick_index.name, Teacher.searchkick_index.fullName])
+  #   else
+  #     result = []
+  #   end
+  # end
+
+  # def search
+  #   if params[:search].present?
+  #     # Just search the field name
+  #     result = School.search(params[:search], index_name: [School.searchkick_index.name, Teacher.searchkick_index.name])
+  #   else
+  #     result = []
+  #   end
+  # end
 
   def index
-    @schools = School.all
+    @search = School.search do
+      fulltext params[:search]
+    end
+    @schools = @search.results
   end
 
   def show
+    @search = Teacher.search do
+      fulltext params[:search]
+    end
+    @teachers = @search.results
   end
 
   # GET /schools/new
@@ -67,13 +82,14 @@ class SchoolsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_school
-      @school = School.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def school_params
-      params.require(:school).permit(:name, :website)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_school
+    @school = School.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def school_params
+    params.require(:school).permit(:name, :website)
+  end
 end

@@ -1,5 +1,7 @@
 class School < ActiveRecord::Base
   has_many :teachers
 
-  searchkick
+  searchable do
+    text :name
+  end
 end

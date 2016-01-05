@@ -5,9 +5,9 @@
 /Teacher Search Form
 .row
   %h1.text-center Tìm Giảng Viên
-  = form_tag search_school_teachers_path(@school), :id => 'custom-search-input', method: :get, class: "input-group col-md-12", role: "search" do
+  = form_tag school_path(@school), :id => 'custom-search-input', method: :get, class: "input-group col-md-12", role: "search" do
     = text_field_tag :search,
-            params[:search], class: "search-query form-control", placeholder: "Tên giảng viên, ví dụ: Nguyễn Văn A..."
+            params[:search], class: "search-query form-control", placeholder: "Tên giảng viên, ví dụ: Nguyễn Văn A...", autofocus: true
     %span.input-group-btn
       = button_tag( :class => "btn btn-danger") do
         %span.glyphicon.glyphicon-search

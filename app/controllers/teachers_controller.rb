@@ -5,14 +5,6 @@ class TeachersController < ApplicationController
   def show
   end
 
-  def search
-    if params[:search].present?
-      @teachers = @school.teachers.search(params[:search], fields: [:lastName, :firstName, :middleName])
-    else
-      @teachers = []
-    end
-  end
-
   def new
     @teacher = @school.teachers.build
   end
@@ -20,7 +12,7 @@ class TeachersController < ApplicationController
   def create
     @teacher = @school.teachers.create(teacher_params)
     @teacher.save
-      redirect_to(@school)
+    redirect_to(@school)
   end
 
   def edit
@@ -42,6 +34,6 @@ class TeachersController < ApplicationController
   end
 
   def teacher_params
-    params.require(:teacher).permit(:firstName, :lastName, :middleName, :department, :school_id)
+    params.require(:teacher).permit(:firstName, :lastName, :middleName, :department, :school_id, :fullName)
   end
 end
