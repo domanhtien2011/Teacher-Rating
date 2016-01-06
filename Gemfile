@@ -9,8 +9,7 @@ gem 'sqlite3'
 gem 'haml'
 # Searck kick
 gem 'searchkick'
-gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
-gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
+
 # Boostrap
 gem 'bootstrap-sass'
 # Devise
