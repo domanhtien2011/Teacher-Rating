@@ -5,25 +5,26 @@
 /Teacher Search Form
 .row
   %h1.text-center Tìm Giảng Viên
-  = form_tag search_school_teachers_path(@school), :id => 'custom-search-input', method: :get, class: "input-group col-md-12", role: "search" do
-    = text_field_tag :search,
-            params[:search], class: "search-query form-control", placeholder: "Tên giảng viên, ví dụ: Nguyễn Văn A..."
+  = form_tag school_teachers_path(@school), :id => 'custom-search-input', method: :get, class: "input-group col-md-12", role: "search" do
+    = text_field_tag :q,
+            params[:q], class: "search-query form-control", placeholder: "Tên giảng viên, ví dụ: Nguyễn Văn A..."
     %span.input-group-btn
       = button_tag( :class => "btn btn-danger") do
         %span.glyphicon.glyphicon-search
-- if user_signed_in?
-  -if current_user.email == "domanhtien2011@gmail.com"
-    / Show all the teachers
-    - @school.teachers.each do |teacher|
-      = link_to teacher.to_s, school_teacher_path(@school, teacher)
 
+/ Show all the teachers
+- @school.teachers.each do |teacher|
+  = link_to teacher.to_s, school_teacher_path(@school, teacher)
+  - if user_signed_in?
+    - if current_user.email == "domanhtien2011@gmail.com"
       %p= link_to("Edit", edit_school_teacher_path(@school, teacher))
       %p= link_to("Show", school_teacher_path(@school, teacher))
 
+- if user_signed_in?
+  - if current_user.email == "domanhtien2011@gmail.com"
 
     / Create new teacher
     %h2= link_to "Add new teacher", new_school_teacher_path(@school)
-
 
     / Bullshit links
     = link_to 'Edit', edit_school_path(@school)

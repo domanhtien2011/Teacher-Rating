@@ -1,17 +1,18 @@
 class SchoolsController < ApplicationController
+
   before_action :set_school, only: [:show, :edit, :update, :destroy]
 
-  def search
-    if params[:search].present?
-      # Just search the field name
-      @schools = School.search(params[:search], fields: [:name])
-    else
-      @schools = []
-    end
-  end
+  # def search
+  #   if params[:search].present?
+  #     # Just search the field name
+  #     @schools = School.search(params[:search], fields: [:name])
+  #   else
+  #     @schools = []
+  #   end
+  # end
 
   def index
-    @schools = School.all
+    # @schools = School.search((params[:q].present? ? params[:q] : '*')).records
   end
 
   def show
@@ -45,15 +46,11 @@ class SchoolsController < ApplicationController
   # PATCH/PUT /schools/1
   # PATCH/PUT /schools/1.json
   def update
-    respond_to do |format|
-      if @school.update(school_params)
-        format.html { redirect_to @school, notice: 'School was successfully updated.' }
-        format.json { render :show, status: :ok, location: @school }
+    if @school.update(school_params)
+      redirect_to root_path, notice: 'School was successfully updated.'
       else
-        format.html { render :edit }
-        format.json { render json: @school.errors, status: :unprocessable_entity }
+        render :edit
       end
-    end
   end
 
   # DELETE /schools/1
