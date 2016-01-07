@@ -3,8 +3,12 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use postgresql as the database for Active Record
+gem 'pg'
+gem 'sinatra', '~> 1.4', '>= 1.4.6'
+gem 'tilt', '>= 1.3.4', '~> 1.3'
+gem 'thinking-sphinx'
+gem 'mysql2'
 # Haml
 gem 'haml'
 # Searck kick

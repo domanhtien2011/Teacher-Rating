@@ -45,3 +45,4 @@ class TeachersController < ApplicationController
     params.require(:teacher).permit(:firstName, :lastName, :middleName, :department, :school_id, :fullName)
   end
 end
+

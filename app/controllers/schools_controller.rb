@@ -1,17 +1,17 @@
 class SchoolsController < ApplicationController
   before_action :set_school, only: [:show, :edit, :update, :destroy]
 
-  def search
-    if params[:search].present?
-      # Just search the field name
-      @schools = School.search(params[:search], fields: [:name])
-    else
-      @schools = []
-    end
-  end
+  # def search
+  #   if params[:search].present?
+  #     # Just search the field name
+  #     @schools = School.search(params[:search], fields: [:name])
+  #   else
+  #     @schools = []
+  #   end
+  # end
 
   def index
-    @schools = School.all
+    @schools = School.search params[:search]
   end
 
   def show
