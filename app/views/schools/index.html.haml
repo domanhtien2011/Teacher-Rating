@@ -1,13 +1,14 @@
 .row
   %h1.text-center Tìm Trường Học
-  = form_tag search_schools_path, :id => 'custom-search-input', method: :get, class: "input-group col-md-12", role: "search" do
+  = form_tag schools_path, :id => 'custom-search-input', method: :get, class: "input-group col-md-12", role: "search" do
     .input-group
-      = text_field_tag :search,
-            params[:search], class: "search-query form-control", placeholder: "Tên trường học, ví dụ: Đại Học Bách Khoa Hồ Chí Minh...."
+      = text_field_tag :query,
+            params[:query], class: "search-query form-control", placeholder: "Tên trường học, ví dụ: Đại Học Bách Khoa Hồ Chí Minh...."
       %span.input-group-btn
         = button_tag( :class => "btn btn-danger") do
           .search-size
             %span.glyphicon.glyphicon-search
+
 
 - if user_signed_in?
   -if current_user.email == "domanhtien2011@gmail.com"
@@ -25,5 +26,3 @@
             %td= link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' }
     %br
       = link_to 'New School', new_school_path
-
-

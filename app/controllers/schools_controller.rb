@@ -11,7 +11,7 @@ class SchoolsController < ApplicationController
   # end
 
   def index
-    @schools = School.search params[:search]
+    @schools = School.text_search(params[:query])
   end
 
   def show

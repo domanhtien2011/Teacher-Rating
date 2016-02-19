@@ -1,0 +1,15 @@
+.row
+  %h1.text-center Tìm Giảng Viên
+  = form_tag teachers_path, :id => 'custom-search-input', method: :get, class: "input-group col-md-12", role: "search" do
+    = text_field_tag :query,
+            params[:query], class: "search-query form-control", placeholder: "Tên giảng viên, ví dụ: Nguyễn Văn A..."
+    %span.input-group-btn
+      = button_tag( :class => "btn btn-danger") do
+        %span.glyphicon.glyphicon-search
+
+
+- @teachers.each do |teacher|
+  = link_to teacher.fullName, teacher
+
+  / %p= link_to("Edit", edit_school_teacher_path(@school, teacher))
+  / %p= link_to("Show", school_teacher_path(@school, teacher))

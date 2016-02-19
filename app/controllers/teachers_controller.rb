@@ -1,16 +1,20 @@
 class TeachersController < ApplicationController
-  before_action :find_school
+  before_action :find_school, except: [:index, :show]
   before_action :find_teacher, only: [:show, :edit, :update, :destroy]
 
   def show
   end
 
-  def search
-    if params[:search].present?
-      @teachers = @school.teachers.search(params[:search], fields: [:fullName])
-    else
-      @teachers = []
-    end
+  # def search
+  #   if params[:search].present?
+  #     @teachers = @school.teachers.search(params[:search], fields: [:fullName])
+  #   else
+  #     @teachers = []
+  #   end
+  # end
+
+  def index
+    @teachers = Teacher.text_search(params[:query])
   end
 
   def new
@@ -18,7 +22,7 @@ class TeachersController < ApplicationController
   end
 
   def create
-    @teacher = @school.teachers.create(teacher_params)
+    @teacher = @school.teachers.build(teacher_params)
     @teacher.save
       redirect_to(@school)
   end

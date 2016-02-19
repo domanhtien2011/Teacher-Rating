@@ -10,7 +10,7 @@
         %li
           / %a{:href => "#"} Link
       /- if url == root_path
-      = form_tag search_schools_path, :id => 'custom-search-input', method: :get, class: "navbar-form navbar-right", role: "search" do
+      = form_tag search_welcome_index_url, :id => 'custom-search-input', method: :get, class: "navbar-form navbar-right", role: "search" do
         .input-group
           = text_field_tag :search,
             params[:search], class: "form-control", placeholder: "Tìm trường..."

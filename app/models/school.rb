@@ -1,9 +1,18 @@
 class School < ActiveRecord::Base
-  has_many :teachers
+  include PgSearch
+  multisearchable :against => [:name]
+  has_many :teachers, dependent: :destroy
 
-  # searchkick
-  define_index do
-    indexes :name
-    indexes teachers.fullName, :as => :teacher_fullName
+  # Generate the method search to pass into the self.text_search
+  # pg_search_scope :search, against: [:name], :associated_against => {
+  #   :teachers => [:fullName]
+  # }
+
+  def self.text_search(query)
+    if query.present?
+      search(query)
+    else
+      all
+    end
   end
 end

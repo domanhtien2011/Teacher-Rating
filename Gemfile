@@ -5,14 +5,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'sinatra', '~> 1.4', '>= 1.4.6'
-gem 'tilt', '>= 1.3.4', '~> 1.3'
-gem 'thinking-sphinx'
-gem 'mysql2'
+gem 'pg_search'
+# gem 'sinatra', '~> 1.4', '>= 1.4.6'
+# gem 'tilt', '>= 1.3.4', '~> 1.3'
 # Haml
 gem 'haml'
-# Searck kick
-gem 'searchkick'
 # Boostrap
 gem 'bootstrap-sass'
 # Devise
