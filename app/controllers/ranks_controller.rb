@@ -1,4 +1,7 @@
 class RanksController < ApplicationController
+  before_action :find_rank, only: [:destroy]
+  before_action :find_school
+  before_action :authenticate_user!, except: [:show, :index]
 
   def new
     @rank = current_user.ranks.build
@@ -17,6 +20,14 @@ class RanksController < ApplicationController
   end
 
   private
+
+    def find_school
+      @school = School.find(params[:school_id])
+    end
+
+    def find_rank
+      @rank = Rank.find(params[:id])
+    end
 
     def rank_params
       params.require(:rank).permit(:internet, :food, :library, :club, :campus, :school_id, :user_id)

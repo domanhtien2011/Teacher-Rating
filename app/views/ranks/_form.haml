@@ -1,0 +1,38 @@
+= form_for([@school, @rank], :html => { :class => "form-horizontal center", :multipart => true }) do |f|
+
+  / Show errors
+  .errors
+    - if @rank.errors.any?
+      %ul
+        - @rank.errors[:user_id].each do |msg|
+          %li= msg
+        - @rank.errors[:subject].each do |msg|
+          %li= msg
+        - @rank.errors[:schoolYear].each do |msg|
+          %li= msg
+  %hr/
+  .text-center
+    %h3 Đánh Giá Trường Học
+    %br/
+  .form-group
+    = f.label :name, "Internet", class: "col-sm-3 control-label"
+    .col-sm-3
+      = f.select(:internet, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
+
+  .form-group
+    = f.label :name, "Thức Ăn", class: "col-sm-3 control-label"
+    .col-sm-3
+      = f.select(:food, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
+
+  .form-group
+    = f.label :name, "Thư Viện", class: "col-sm-3 control-label"
+    .col-sm-3
+      = f.select(:library, options_for_select([["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]), {}, {class: "form-control"})
+
+  .form-group
+    = f.label :name, "Nhận Xét", class: "col-sm-3 control-label"
+    .col-sm-3
+      = f.text_area :comment, {:rows => "10", :cols => "50"}
+  .form-group
+    .col-sm-3.col-sm-offset-1
+      = f.submit "Đánh Giá", class: "btn btn-warning btn-sm"
