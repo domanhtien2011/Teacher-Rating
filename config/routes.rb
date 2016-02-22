@@ -2,21 +2,22 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :welcome do
-    collection do
-      get 'search'
-    end
   end
 
   resources :schools do
     # collection do
     #   get 'search'
     # end
+    resources :ranks
     resources :teachers
   end
 
   resources :teachers do
+     collection do
+        get 'search'
+      end
     resources :ratings
   end
 
-  root 'welcome#welcome'
+  root 'teachers#search'
 end

@@ -1,20 +1,21 @@
 class TeachersController < ApplicationController
-  before_action :find_school, except: [:index, :show]
+  before_action :find_school, except: [:index, :search]
   before_action :find_teacher, only: [:show, :edit, :update, :destroy]
 
   def show
   end
 
-  # def search
-  #   if params[:search].present?
-  #     @teachers = @school.teachers.search(params[:search], fields: [:fullName])
-  #   else
-  #     @teachers = []
-  #   end
-  # end
+  def search
+    if params[:search].present?
+      @teachers = Teacher.search(params[:search])
+    else
+      @teachers = []
+    end
+  end
 
   def index
-    @teachers = Teacher.text_search(params[:query])
+    @teachers = Teacher.all
+    # @teachers = Teacher.text_search(params[:query])
   end
 
   def new

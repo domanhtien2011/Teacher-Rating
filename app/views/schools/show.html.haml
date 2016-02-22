@@ -2,23 +2,9 @@
   %h1= @school.name
   %em= link_to('Website', @school.website, target: '_blank')
 
-/Teacher Search Form
-.row
-  %h1.text-center Tìm Giảng Viên
-  = form_tag school_teachers_path(@school, @teacher), :id => 'custom-search-input', method: :post, class: "input-group col-md-12", role: "search" do
-    = text_field_tag :query,
-            params[:query], class: "search-query form-control", placeholder: "Tên giảng viên, ví dụ: Nguyễn Văn A..."
-    %span.input-group-btn
-      = button_tag( :class => "btn btn-danger") do
-        %span.glyphicon.glyphicon-search
-
 
 
 / Create new teacher
 %h2= link_to "Add new teacher", new_school_teacher_path(@school)
 
 
-/ Bullshit links
-= link_to 'Edit', edit_school_path(@school)
-|
-\#{link_to 'Back', schools_path}

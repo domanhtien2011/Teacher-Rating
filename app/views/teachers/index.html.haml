@@ -9,7 +9,7 @@
 
 
 - @teachers.each do |teacher|
-  = link_to teacher.fullName, teacher
+  = link_to teacher.full_name, teacher
 
   / %p= link_to("Edit", edit_school_teacher_path(@school, teacher))
   / %p= link_to("Show", school_teacher_path(@school, teacher))
