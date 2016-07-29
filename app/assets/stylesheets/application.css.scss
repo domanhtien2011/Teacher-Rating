@@ -18,13 +18,19 @@
 @import "bootstrap";
 @import "normalize";
 
+@import "materialize/components/color";
+$primary-color: color("red", "lighten-2") !default;
+
+@import "materialize";
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     padding-top: 70px;
-    background: #00adee;
-    a {
-        color: white;
-    }
+    //background: #00adee;
+    //a {
+    //    color: white;
+    //}
 
 }
 
@@ -48,7 +54,7 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: white;
+    //color: white;
 }
 
 label {

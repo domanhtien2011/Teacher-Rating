@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Haml
 gem 'haml'
 # Searck kick
@@ -16,7 +14,14 @@ gem 'devise'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Minitests
-gem 'minitest-rails'
+gem 'minitest'
+
+gem 'pg'
+
+gem 'i18n', '~> 0.7.0.beta1'
+
+gem 'materialize-sass'
+
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
@@ -55,4 +60,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-

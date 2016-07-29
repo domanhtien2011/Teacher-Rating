@@ -1,0 +1,19 @@
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/byebug-8.2.1/ext/byebug
+/Users/tienmanhdo/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20160729-16559-1atz63j.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/byebug-8.2.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/byebug-8.2.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/byebug-8.2.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20160729-16559-oz8vwo/byebug

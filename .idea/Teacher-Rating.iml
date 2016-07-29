@@ -10,6 +10,56 @@
     </facet>
   </component>
   <component name="ModuleRunConfigurationManager">
+    <configuration default="false" name="Production: Teacher-Rating" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+      <module name="Teacher-Rating" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Development: Teacher-Rating" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+      <module name="Teacher-Rating" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="true" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="RVM: ruby-2.2.3" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="test: Teacher-Rating" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="Teacher-Rating" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -58,56 +108,6 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Production: Teacher-Rating" type="RailsRunConfigurationType" factoryName="Rails">
-      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
-      <module name="Teacher-Rating" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Development: Teacher-Rating" type="RailsRunConfigurationType" factoryName="Rails">
-      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
-      <module name="Teacher-Rating" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
-      <method />
-    </configuration>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
@@ -121,48 +121,795 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionview (v4.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activejob (v4.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activemodel (v4.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activerecord (v4.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="arel (v6.0.3, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.10, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="module-library">
+      <library name="actionmailer (vbundled(4.2.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/actionmailer-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/actionmailer-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/actionmailer-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="actionpack (vbundled(4.2.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="actionview (vbundled(4.2.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/actionview-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/actionview-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/actionview-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activejob (vbundled(4.2.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/activejob-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/activejob-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/activejob-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemodel (vbundled(4.2.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/activemodel-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/activemodel-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/activemodel-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activerecord (vbundled(4.2.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activesupport (vbundled(4.2.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="arel (vbundled(6.0.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/arel-6.0.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/arel-6.0.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/arel-6.0.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="autoprefixer-rails (vbundled(6.2.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/autoprefixer-rails-6.2.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/autoprefixer-rails-6.2.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/autoprefixer-rails-6.2.3/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/autoprefixer-rails-6.2.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/autoprefixer-rails-6.2.3/vendor" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bcrypt (vbundled(3.1.10), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/bcrypt-3.1.10) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bcrypt-3.1.10/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bcrypt-3.1.10/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bcrypt-3.1.10/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bcrypt-3.1.10/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bootstrap-sass (vbundled(3.3.6), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/bootstrap-sass-3.3.6) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bootstrap-sass-3.3.6/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bootstrap-sass-3.3.6/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bootstrap-sass-3.3.6/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bootstrap-sass-3.3.6/templates" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bootstrap-sass-3.3.6/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bootstrap-sass-3.3.6/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bootstrap-sass-3.3.6/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/bootstrap-sass-3.3.6/templates" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="builder (vbundled(3.2.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/builder-3.2.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/builder-3.2.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/builder-3.2.2/rakelib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/builder-3.2.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/builder-3.2.2/rakelib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="byebug (vbundled(8.2.1), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/byebug-8.2.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/byebug-8.2.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/byebug-8.2.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/byebug-8.2.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/byebug-8.2.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/byebug-8.2.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/byebug-8.2.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="coffee-rails (vbundled(4.1.1), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/coffee-rails-4.1.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/coffee-rails-4.1.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/coffee-rails-4.1.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="coffee-script (vbundled(2.4.1), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/coffee-script-2.4.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/coffee-script-2.4.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/coffee-script-2.4.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="coffee-script-source (vbundled(1.10.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/coffee-script-source-1.10.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/coffee-script-source-1.10.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/coffee-script-source-1.10.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="concurrent-ruby (vbundled(1.0.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/concurrent-ruby-1.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/concurrent-ruby-1.0.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/concurrent-ruby-1.0.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="debug_inspector (vbundled(0.0.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/debug_inspector-0.0.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/debug_inspector-0.0.2/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/debug_inspector-0.0.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/debug_inspector-0.0.2/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/debug_inspector-0.0.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="devise (vbundled(3.5.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/app" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/config" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/script" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/gemfiles" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/app" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/config" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/script" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/devise-3.5.3/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="elasticsearch (vbundled(1.0.15), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/elasticsearch-1.0.15) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/elasticsearch-1.0.15/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/elasticsearch-1.0.15/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="elasticsearch-api (vbundled(1.0.15), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/elasticsearch-api-1.0.15) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/elasticsearch-api-1.0.15/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/elasticsearch-api-1.0.15/utils" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/elasticsearch-api-1.0.15/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/elasticsearch-api-1.0.15/utils" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="elasticsearch-transport (vbundled(1.0.15), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/elasticsearch-transport-1.0.15) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/elasticsearch-transport-1.0.15/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/elasticsearch-transport-1.0.15/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="erubis (vbundled(2.7.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/contrib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/doc-api" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/benchmark" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/contrib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/doc-api" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/erubis-2.7.0/benchmark" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="execjs (vbundled(2.6.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/execjs-2.6.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/execjs-2.6.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/execjs-2.6.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="faraday (vbundled(0.9.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/faraday-0.9.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/faraday-0.9.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/faraday-0.9.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="globalid (vbundled(0.3.6), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/globalid-0.3.6) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/globalid-0.3.6/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/globalid-0.3.6/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="haml (vbundled(4.0.7), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/haml-4.0.7) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/haml-4.0.7/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/haml-4.0.7/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/haml-4.0.7/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/haml-4.0.7/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hashie (vbundled(3.4.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/hashie-3.4.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/hashie-3.4.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/hashie-3.4.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="i18n (vbundled(0.7.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/i18n-0.7.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/i18n-0.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/i18n-0.7.0/gemfiles" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/i18n-0.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/i18n-0.7.0/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jbuilder (vbundled(2.4.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/jbuilder-2.4.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/jbuilder-2.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/jbuilder-2.4.0/gemfiles" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/jbuilder-2.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/jbuilder-2.4.0/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jquery-rails (vbundled(4.0.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/jquery-rails-4.0.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/jquery-rails-4.0.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/jquery-rails-4.0.5/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/jquery-rails-4.0.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/jquery-rails-4.0.5/vendor" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="json (vbundled(1.8.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/json-1.8.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/diagrams" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/json-1.8.3/diagrams" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="loofah (vbundled(2.0.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/loofah-2.0.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/loofah-2.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/loofah-2.0.3/benchmark" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/loofah-2.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/loofah-2.0.3/benchmark" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mail (vbundled(2.6.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/mail-2.6.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mail-2.6.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mail-2.6.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="materialize-sass (vbundled(0.97.6), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/materialize-sass-0.97.6) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/materialize-sass-0.97.6/app" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/materialize-sass-0.97.6/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/materialize-sass-0.97.6/app" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/materialize-sass-0.97.6/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mime-types (vbundled(2.99), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/mime-types-2.99) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mime-types-2.99/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mime-types-2.99/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mime-types-2.99/support" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mime-types-2.99/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mime-types-2.99/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mime-types-2.99/support" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mini_portile2 (vbundled(2.0.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/mini_portile2-2.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mini_portile2-2.0.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/mini_portile2-2.0.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="minitest (vbundled(5.8.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/minitest-5.8.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/minitest-5.8.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/minitest-5.8.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="multi_json (vbundled(1.11.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/multi_json-1.11.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/multi_json-1.11.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/multi_json-1.11.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="multipart-post (vbundled(2.0.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/multipart-post-2.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/multipart-post-2.0.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/multipart-post-2.0.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="nokogiri (vbundled(1.6.7.1), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/patches" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/suppressions" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/patches" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.1/suppressions" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="orm_adapter (vbundled(0.5.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/orm_adapter-0.5.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/orm_adapter-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/orm_adapter-0.5.0/gemfiles" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/orm_adapter-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/orm_adapter-0.5.0/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="pg (vbundled(0.18.4), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/pg-0.18.4) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/pg-0.18.4/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/pg-0.18.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/pg-0.18.4/sample" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/pg-0.18.4/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/pg-0.18.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/pg-0.18.4/sample" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rack (vbundled(1.6.4), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/contrib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/example" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/contrib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/example" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rack-test (vbundled(0.6.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/rack-test-0.6.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-test-0.6.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rack-test-0.6.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rails (vbundled(4.2.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/rails-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rails-4.2.5/guides" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rails-4.2.5/guides" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rails-deprecated_sanitizer (vbundled(1.0.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/rails-deprecated_sanitizer-1.0.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rails-deprecated_sanitizer-1.0.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rails-deprecated_sanitizer-1.0.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rails-dom-testing (vbundled(1.0.7), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/rails-dom-testing-1.0.7) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rails-dom-testing-1.0.7/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rails-dom-testing-1.0.7/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rails-html-sanitizer (vbundled(1.0.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/rails-html-sanitizer-1.0.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rails-html-sanitizer-1.0.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rails-html-sanitizer-1.0.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="railties (vbundled(4.2.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/railties-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rdoc (vbundled(4.2.1), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/rdoc-4.2.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rdoc-4.2.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rdoc-4.2.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rdoc-4.2.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/rdoc-4.2.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="responders (vbundled(2.1.1), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/responders-2.1.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/responders-2.1.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/responders-2.1.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sass (vbundled(3.4.20), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/extra" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/rails" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/extra" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/rails" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-3.4.20/vendor" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sass-rails (vbundled(5.0.4), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/sass-rails-5.0.4) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-rails-5.0.4/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sass-rails-5.0.4/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sdoc (vbundled(0.4.1), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/sdoc-0.4.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sdoc-0.4.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sdoc-0.4.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sdoc-0.4.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sdoc-0.4.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="searchkick (vbundled(1.1.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/searchkick-1.1.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/searchkick-1.1.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/searchkick-1.1.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring (vbundled(1.6.1), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/spring-1.6.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/spring-1.6.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/spring-1.6.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/spring-1.6.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/spring-1.6.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sprockets (vbundled(3.5.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/sprockets-3.5.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sprockets-3.5.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sprockets-3.5.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sprockets-3.5.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sprockets-3.5.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sprockets-rails (vbundled(3.0.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="thor (vbundled(0.19.1), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/thor-0.19.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thor-0.19.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thor-0.19.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thor-0.19.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thor-0.19.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="thread_safe (vbundled(0.3.5), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/thread_safe-0.3.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thread_safe-0.3.5/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thread_safe-0.3.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thread_safe-0.3.5/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thread_safe-0.3.5/yard-template" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thread_safe-0.3.5/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thread_safe-0.3.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thread_safe-0.3.5/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/thread_safe-0.3.5/yard-template" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tilt (vbundled(2.0.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/tilt-2.0.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/tilt-2.0.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/tilt-2.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/tilt-2.0.2/man" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/tilt-2.0.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/tilt-2.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/tilt-2.0.2/man" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="turbolinks (vbundled(2.5.3), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/turbolinks-2.5.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/turbolinks-2.5.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/turbolinks-2.5.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tzinfo (vbundled(1.2.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/tzinfo-1.2.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/tzinfo-1.2.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/tzinfo-1.2.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="uglifier (vbundled(2.7.2), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/uglifier-2.7.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/uglifier-2.7.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/uglifier-2.7.2/gemfiles" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/uglifier-2.7.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/uglifier-2.7.2/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="warden (vbundled(1.2.4), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/warden-1.2.4) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/warden-1.2.4/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/warden-1.2.4/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="web-console (vbundled(3.0.0), /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.2.0/gems/web-console-3.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/web-console-3.0.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.2.0/gems/web-console-3.0.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.12.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.1.1, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.4.1, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.10.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.0.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="debug_inspector (v0.0.2, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="execjs (v2.6.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="globalid (v0.3.6, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="haml (v4.0.7, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="i18n (v0.7.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="json (v1.8.3, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.3, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.3, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mime-types (v2.99, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.0.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.11.2, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack (v1.6.4, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rails (v4.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rails-deprecated_sanitizer (v1.0.3, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v1.0.7, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.4, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.1, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.5.2, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.1, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.2, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="turbolinks (v2.5.3, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.2, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.7.2, RVM: ruby-2.2.3) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

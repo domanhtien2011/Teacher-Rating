@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Teacher-Rating: test" uuid="c4df420c-0f16-46b3-bead-fdcfdf813200">
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails Teacher-Rating: development" uuid="32f6ee77-e49d-449c-a43b-be99d5fbd6f1">
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>

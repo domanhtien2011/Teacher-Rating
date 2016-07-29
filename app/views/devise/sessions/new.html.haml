@@ -1,19 +1,23 @@
 .text-center
   %h2 Đăng Nhập
-  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-    .form-group
-      = f.label :email
-      %br/
-      = f.email_field :email, autofocus: true, input_html: { class: 'form-control' }
-    .form-group
-      = f.label :name, "Mật Khẩu"
-      %br/
-      = f.password_field :password, autocomplete: "off", input_html: { class: 'form-control' }
-    - if devise_mapping.rememberable?
-      .field
-        = f.check_box :remember_me
-        = f.label :name , "Nhớ mật khẩu"
-    .actions
-      = f.submit "Đăng Nhập", class: "btn btn-primary btn-sm"
-  %small
-    = render "devise/shared/links"
+.row
+  .col.s12
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .row
+        .input-field.col.s12
+          = f.email_field :email, autofocus: true
+          = f.label :email
+      .row
+        .input-field.col.s12
+          = f.password_field :password, autocomplete: "off"
+          = f.label :name, "Mật Khẩu"
+          - if devise_mapping.rememberable?
+            .field
+              = f.check_box :remember_me
+              = f.label :name , "Nhớ mật khẩu"
+      .row
+        .input-field.col.s12
+          .actions
+            = f.submit "Đăng Nhập", class: "btn btn-primary btn-sm"
+          %small
+            = render "devise/shared/links"
