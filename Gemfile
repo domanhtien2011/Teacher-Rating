@@ -15,6 +15,9 @@ gem 'bootstrap-sass'
 gem 'devise'
 # Use SCSS for stylesheets
 gem 'sass-rails'
+# Minitests
+gem 'minitest-rails'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Use CoffeeScript for .coffee assets and views
