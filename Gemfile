@@ -2,26 +2,52 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
-# Haml
-gem 'haml'
-# Searck kick
-gem 'searchkick'
+gem 'rails', '~> 5.0.0.beta1'
+
+# Slim
+gem "slim-rails"
+# Faster Haml
+gem 'hamlit'
+# Faker
+gem 'faker'
 # Boostrap
-gem 'bootstrap-sass'
-# Devise
-gem 'devise'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+group :development do
+  # Brakeman check the Rails application security vulnerabilities
+  gem 'brakeman', :require => false
+
+  # Better Errors
+  gem "better_errors"
+  gem 'pry-rails'
+
+  # Advanced Features with Better Errors Gem
+  gem "binding_of_caller"
+
+  # Puma Server
+  gem 'puma'
+
+  gem 'rails-footnotes', '~> 4.0'
+
+  # Meta Requests to Work with Rails Panel in Google Chrome
+  gem 'meta_request'
+
+  gem 'quiet_assets'
+
+end
+# Awesome Print
+gem "awesome_print", require:"ap"
 # Use SCSS for stylesheets
 gem 'sass-rails'
+# Font-Awesome
+gem "font-awesome-rails"
+
 # Minitests
 gem 'minitest'
 
 gem 'pg'
 
-gem 'i18n', '~> 0.7.0.beta1'
-
-gem 'materialize-sass'
-
+gem 'i18n'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'

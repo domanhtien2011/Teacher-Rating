@@ -19,5 +19,4 @@ if ARGV.first
   end
 end
 
-gem 'sprockets', version
-load Gem.bin_path('sprockets', 'sprockets', version)
+load Gem.activate_bin_path('sprockets', 'sprockets', version)

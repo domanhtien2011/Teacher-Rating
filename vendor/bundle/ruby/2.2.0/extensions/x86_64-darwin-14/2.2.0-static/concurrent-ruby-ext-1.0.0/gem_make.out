@@ -1,0 +1,23 @@
+/Users/tienmanhdo/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20170205-4287-580m77.rb extconf.rb
+checking for libkern/OSAtomic.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling atomic_boolean.c
+compiling atomic_fixnum.c
+compiling atomic_reference.c
+atomic_reference.c:64:57: warning: incompatible pointer types passing 'void **' to parameter of type 'volatile OSAtomic_int64_aligned64_t *' (aka 'volatile long long *') [-Wincompatible-pointer-types]
+  if (OSAtomicCompareAndSwap64(expect_value, new_value, &DATA_PTR(self))) {
+                                                        ^~~~~~~~~~~~~~~
+/usr/include/libkern/OSAtomicDeprecated.h:629:40: note: passing argument to parameter '__theValue' here
+                volatile OSAtomic_int64_aligned64_t *__theValue );
+                                                     ^
+1 warning generated.
+compiling rb_concurrent.c
+linking shared-object concurrent/extension.bundle
+ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 extension.bundle ./.gem.20170205-4287-tmzyf9/concurrent

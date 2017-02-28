@@ -1,32 +1,19 @@
-%nav.navbar.navbar-default.navbar-fixed-top
-  .container-fluid
-    .navbar-header
-      %button.navbar-toggle.collapsed{"%aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-      %a.navbar-brand{:href => root_path} Đánh Giá Giảng Viên
-    / Collect the nav links, forms, and other content for toggling
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        %li
-          / %a{:href => "#"} Link
-      /- if url == root_path
-      = form_tag search_schools_path, :id => 'custom-search-input', method: :get, class: "navbar-form navbar-right", role: "search" do
-        .input-group
-          = text_field_tag :search,
-            params[:search], class: "form-control", placeholder: "Tìm trường..."
-          %span.input-group-btn
-            = button_tag( :class => "btn btn-default") do
-              %span.glyphicon.glyphicon-search
-      %ul.nav.navbar-nav.navbar-right
-        - if !user_signed_in?
-          %li
-            = link_to("Đăng Nhập", new_user_session_url)
-          %li
-            = link_to("Đăng Ký", new_user_registration_url)
-        - else
-          %li
-            = link_to("Tài Khoản Của Bạn", edit_user_registration_url)
-          %li
-            = link_to("Thoát Tài Khoản",destroy_user_session_url, method: :delete)
-/ /.navbar-collapse
-/ /.container-fluid
+%nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+  %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  %a.navbar-brand{:href => "#"} Navbar
+  #navbarSupportedContent.collapse.navbar-collapse
+    %ul.navbar-nav.mr-auto
+      %li.nav-item.active
+        %a.nav-link{:href => root_path}
+          Home
+          %span.sr-only (current)
+      %li.nav-item
+        %a.nav-link{:href => "#"} Link
+      %li.nav-item
+        %a.nav-link.disabled{:href => "#"} Disabled
+
+    = form_tag('welcome/search', method: :get, class: 'form-inline my-2 my-lg-0') do
+      = text_field_tag 'search', params[:search], placeholder: 'Nhap ten truong hoac ten cua thay co...', class: 'form-control mr-sm-2'
+      %button.btn.btn-outline-success.my-2.my-sm-0{:type => "submit"} Search
+

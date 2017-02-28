@@ -1,0 +1,13 @@
+/Users/tienmanhdo/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20170228-29803-o7850c.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling hamlit.c
+compiling hescape.c
+linking shared-object hamlit/hamlit.bundle
+ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 hamlit.bundle ./.gem.20170228-29803-ec3rw0/hamlit

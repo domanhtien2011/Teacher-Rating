@@ -1,0 +1,20 @@
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/hamlit-2.7.2/ext/hamlit
+/Users/tienmanhdo/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20160920-4161-14obnom.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/hamlit-2.7.2/ext/hamlit
+make "DESTDIR=" clean
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/hamlit-2.7.2/ext/hamlit
+make "DESTDIR="
+compiling hamlit.c
+hamlit.c:65:10: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'unsigned int' [-Wshorten-64-to-32]
+  size = hesc_escape_html(&buf, RSTRING_PTR(str), RSTRING_LEN(str));
+       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+compiling hescape.c
+linking shared-object hamlit/hamlit.bundle
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/hamlit-2.7.2/ext/hamlit
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hamlit.bundle ./.gem.20160920-4161-77j6dd/hamlit

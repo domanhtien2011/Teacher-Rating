@@ -19,5 +19,4 @@ if ARGV.first
   end
 end
 
-gem 'spring', version
-load Gem.bin_path('spring', 'spring', version)
+load Gem.activate_bin_path('spring', 'spring', version)

@@ -1,0 +1,56 @@
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/concurrent-ruby-ext-1.0.0/ext/concurrent
+/Users/tienmanhdo/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20170205-4916-86btds.rb extconf.rb 
+checking for libkern/OSAtomic.h... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/extensions/x86_64-darwin-15/2.3.0/concurrent-ruby-ext-1.0.0/mkmf.log
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/concurrent-ruby-ext-1.0.0/ext/concurrent
+make "DESTDIR=" clean
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/concurrent-ruby-ext-1.0.0/ext/concurrent
+make "DESTDIR="
+compiling atomic_boolean.c
+atomic_boolean.c:12:10: warning: 'rb_data_object_alloc' is deprecated: by rb_data_object_wrap [-Wdeprecated-declarations]
+  return rb_data_object_alloc(klass, (void *) Qfalse, atomic_boolean_mark, NULL);
+         ^
+/Users/tienmanhdo/.rvm/rubies/ruby-2.3.0/include/ruby-2.3.0/ruby/ruby.h:1421:1: note: 'rb_data_object_alloc' has been explicitly marked deprecated here
+rb_data_object_alloc(VALUE klass, void *data, RUBY_DATA_FUNC dmark, RUBY_DATA_FUNC dfree)
+^
+1 warning generated.
+compiling atomic_fixnum.c
+atomic_fixnum.c:12:10: warning: 'rb_data_object_alloc' is deprecated: by rb_data_object_wrap [-Wdeprecated-declarations]
+  return rb_data_object_alloc(klass, (void *) Qnil, atomic_fixnum_mark, NULL);
+         ^
+/Users/tienmanhdo/.rvm/rubies/ruby-2.3.0/include/ruby-2.3.0/ruby/ruby.h:1421:1: note: 'rb_data_object_alloc' has been explicitly marked deprecated here
+rb_data_object_alloc(VALUE klass, void *data, RUBY_DATA_FUNC dmark, RUBY_DATA_FUNC dfree)
+^
+1 warning generated.
+compiling atomic_reference.c
+atomic_reference.c:17:10: warning: 'rb_data_object_alloc' is deprecated: by rb_data_object_wrap [-Wdeprecated-declarations]
+  return rb_data_object_alloc(klass, (void *) Qnil, ir_mark, NULL);
+         ^
+/Users/tienmanhdo/.rvm/rubies/ruby-2.3.0/include/ruby-2.3.0/ruby/ruby.h:1421:1: note: 'rb_data_object_alloc' has been explicitly marked deprecated here
+rb_data_object_alloc(VALUE klass, void *data, RUBY_DATA_FUNC dmark, RUBY_DATA_FUNC dfree)
+^
+atomic_reference.c:64:7: warning: 'OSAtomicCompareAndSwap64' is deprecated: first deprecated in macOS 10.12 - Use atomic_compare_exchange_strong_explicit(memory_order_relaxed) from <stdatomic.h> instead [-Wdeprecated-declarations]
+  if (OSAtomicCompareAndSwap64(expect_value, new_value, &DATA_PTR(self))) {
+      ^
+/usr/include/libkern/OSAtomicDeprecated.h:628:9: note: 'OSAtomicCompareAndSwap64' has been explicitly marked deprecated here
+bool    OSAtomicCompareAndSwap64( int64_t __oldValue, int64_t __newValue,
+        ^
+atomic_reference.c:64:57: warning: incompatible pointer types passing 'void **' to parameter of type 'volatile OSAtomic_int64_aligned64_t *' (aka 'volatile long long *') [-Wincompatible-pointer-types]
+  if (OSAtomicCompareAndSwap64(expect_value, new_value, &DATA_PTR(self))) {
+                                                        ^~~~~~~~~~~~~~~
+/usr/include/libkern/OSAtomicDeprecated.h:629:40: note: passing argument to parameter '__theValue' here
+                volatile OSAtomic_int64_aligned64_t *__theValue );
+                                                     ^
+3 warnings generated.
+compiling rb_concurrent.c
+linking shared-object concurrent/extension.bundle
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/concurrent-ruby-ext-1.0.0/ext/concurrent
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 extension.bundle ./.gem.20170205-4916-wq3o93/concurrent

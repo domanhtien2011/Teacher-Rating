@@ -2,13 +2,11 @@ class Teacher < ActiveRecord::Base
   belongs_to :school
   has_many :ratings
 
-  searchkick
-
-  def name
-    "#{lastName} #{middleName} #{firstName}"
+  def full_name
+    "#{last_name} #{middle_name} #{first_name}"
   end
 
   def to_s
-    name
+    full_name
   end
 end

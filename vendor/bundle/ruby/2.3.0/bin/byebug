@@ -19,5 +19,4 @@ if ARGV.first
   end
 end
 
-gem 'byebug', version
-load Gem.bin_path('byebug', 'byebug', version)
+load Gem.activate_bin_path('byebug', 'byebug', version)

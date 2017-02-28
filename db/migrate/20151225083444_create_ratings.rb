@@ -5,7 +5,7 @@ class CreateRatings < ActiveRecord::Migration
       t.integer :helpfulness
       t.integer :easiness
       t.text :comment
-      t.references :teacher, index: true, foreign_key: true
+      t.references :teacher, index: true
 
       t.timestamps null: false
     end

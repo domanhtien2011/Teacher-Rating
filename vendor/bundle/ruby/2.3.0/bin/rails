@@ -19,5 +19,4 @@ if ARGV.first
   end
 end
 
-gem 'railties', version
-load Gem.bin_path('railties', 'rails', version)
+load Gem.activate_bin_path('railties', 'rails', version)

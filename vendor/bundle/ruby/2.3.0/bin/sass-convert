@@ -19,5 +19,4 @@ if ARGV.first
   end
 end
 
-gem 'sass', version
-load Gem.bin_path('sass', 'sass-convert', version)
+load Gem.activate_bin_path('sass', 'sass-convert', version)

@@ -10,101 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
 
-@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "normalize";
-
-@import "materialize/components/color";
-$primary-color: color("red", "lighten-2") !default;
-
-@import "materialize";
-
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    padding-top: 70px;
-    //background: #00adee;
-    //a {
-    //    color: white;
-    //}
-
-}
-
-.navbar.navbar-default {
-    background: #333;
-}
-
-.navbar-default .navbar-brand {
-    color: #ffffff;
-}
-
-.navbar-default .navbar-brand:hover {
-    color: #20AAEE;
-}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #20AAEE;
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-.navbar-default .navbar-nav > li > a {
-    //color: white;
-}
-
-label {
-    margin-top: -0.5em;
-}
-
-// .help-block {
-//     display: inline;
-
-// }
-
-.errors {
-    color: red;
-}
-
-// Home Page Search
-#custom-search-input {
-    margin: 0;
-    margin-top: 10px;
-    padding: 0;
-}
-
-#custom-search-input .search-query {
-    padding-right: 3px;
-    padding-right: 4px \9;
-    padding-left: 3px;
-    padding-left: 4px \9;
-
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
-    margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-
-#custom-search-input button {
-    border: 0;
-    background: none;
-
-    /** belows styles are working good */
-    padding: 2px 5px;
-    margin-top: 2px;
-    position: relative;
-    left: -28px;
-
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
-    margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    color: #3596e0;
-}

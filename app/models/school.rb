@@ -1,5 +1,8 @@
 class School < ActiveRecord::Base
   has_many :teachers
 
-  searchkick
+
+  def self.search(params)
+    Teacher.where('first_name LIKE?', "%#{params}%")
+  end
 end

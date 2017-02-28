@@ -1,0 +1,9 @@
+/Users/tienmanhdo/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20170228-29803-1dbp0oc.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install

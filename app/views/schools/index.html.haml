@@ -7,23 +7,7 @@
       %span.input-group-btn
         = button_tag( :class => "btn btn-danger") do
           .search-size
-            %span.glyphicon.glyphicon-search
-
-- if user_signed_in?
-  -if current_user.email == "domanhtien2011@gmail.com"
-    %h1 Listing Schools
-    %table
-      %thead
-        %tr
-          %th Name
-          %th{:colspan => "3"}
-      %tbody
-        - @schools.each do |school|
-          %tr
-            %td= link_to school.name, school
-            %td= link_to 'Edit', edit_school_path(school)
-            %td= link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' }
-    %br
-      = link_to 'New School', new_school_path
+            %span
+              <i class="fa fa-search" aria-hidden="true"></i>
 
 

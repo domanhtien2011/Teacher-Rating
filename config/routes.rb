@@ -1,22 +1,19 @@
 Rails.application.routes.draw do
-  devise_for :users
+  root 'welcome#index'
+
+  get '/welcome', to: 'welcome#index'
+
+  get'/welcome/search', to: 'welcome#search'
 
   resources :schools do
-    collection do
-      get 'search'
-    end
-    resources :teachers do
-      collection do
-        get 'search'
-      end
-    end
+    resources :teachers
   end
 
   resources :teachers do
     resources :ratings
   end
 
-  root 'schools#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

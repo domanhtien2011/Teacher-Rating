@@ -1,0 +1,34 @@
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+/Users/tienmanhdo/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20170228-35460-b9dfi.rb extconf.rb 
+Ignoring bcrypt-3.1.10 because its extensions are not built.  Try: gem pristine bcrypt --version 3.1.10
+Ignoring binding_of_caller-0.7.2 because its extensions are not built.  Try: gem pristine binding_of_caller --version 0.7.2
+Ignoring byebug-8.2.1 because its extensions are not built.  Try: gem pristine byebug --version 8.2.1
+Ignoring concurrent-ruby-ext-1.0.0 because its extensions are not built.  Try: gem pristine concurrent-ruby-ext --version 1.0.0
+Ignoring hamlit-2.7.5 because its extensions are not built.  Try: gem pristine hamlit --version 2.7.5
+Ignoring hamlit-2.7.2 because its extensions are not built.  Try: gem pristine hamlit --version 2.7.2
+Ignoring json-1.8.6 because its extensions are not built.  Try: gem pristine json --version 1.8.6
+Ignoring nokogiri-1.7.0.1 because its extensions are not built.  Try: gem pristine nokogiri --version 1.7.0.1
+Ignoring nokogiri-1.6.7.1 because its extensions are not built.  Try: gem pristine nokogiri --version 1.6.7.1
+Ignoring pg-0.19.0 because its extensions are not built.  Try: gem pristine pg --version 0.19.0
+Ignoring pg-0.18.4 because its extensions are not built.  Try: gem pristine pg --version 0.18.4
+Ignoring puma-3.7.1 because its extensions are not built.  Try: gem pristine puma --version 3.7.1
+Ignoring puma-3.6.0 because its extensions are not built.  Try: gem pristine puma --version 3.6.0
+Ignoring sqlite3-1.3.11 because its extensions are not built.  Try: gem pristine sqlite3 --version 1.3.11
+Ignoring websocket-driver-0.6.5 because its extensions are not built.  Try: gem pristine websocket-driver --version 0.6.5
+creating Makefile
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/tienmanhdo/Projects/RailsProjects/Teacher-Rating/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 byebug.bundle ./.gem.20170228-35460-3ahc65/byebug
