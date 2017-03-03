@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -28,9 +27,8 @@ ActiveRecord::Schema.define(version: 20151229024625) do
     t.integer  "schoolYear"
     t.string   "gradeReceived"
     t.string   "subject"
+    t.index ["teacher_id"], name: "index_ratings_on_teacher_id", using: :btree
   end
-
-  add_index "ratings", ["teacher_id"], name: "index_ratings_on_teacher_id", using: :btree
 
   create_table "schools", force: :cascade do |t|
     t.string   "name"
@@ -47,9 +45,8 @@ ActiveRecord::Schema.define(version: 20151229024625) do
     t.integer  "school_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.index ["school_id"], name: "index_teachers_on_school_id", using: :btree
   end
-
-  add_index "teachers", ["school_id"], name: "index_teachers_on_school_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -64,9 +61,8 @@ ActiveRecord::Schema.define(version: 20151229024625) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

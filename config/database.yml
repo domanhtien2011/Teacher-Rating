@@ -1,15 +1,8 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: teacher_rating_development
+  adapter:  postgresql
+  encoding: utf8
   pool: 5
-  username: nykdev
-  password: nykdev
-
-test:
-  adapter: postgresql
-  encoding: unicode
-  database: teacher_rating_test
-  pool: 5
-  username: nykdev
-  password: nykdev
+  username: tien
+  password: password
+  database: teachearRating_development
+  timeout: 5000

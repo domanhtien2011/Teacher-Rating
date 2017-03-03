@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  def index
+  def index	  
     params[:search].present? ? (@results = School.search(params[:search])) : (@results = nil)
   end
 

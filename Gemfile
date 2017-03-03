@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0.beta1'
+gem 'rails', '~> 5.0.0.rc2'
 
 # Slim
 gem "slim-rails"
@@ -27,7 +27,7 @@ group :development do
   # Puma Server
   gem 'puma'
 
-  gem 'rails-footnotes', '~> 4.0'
+  gem 'rails-footnotes'
 
   # Meta Requests to Work with Rails Panel in Google Chrome
   gem 'meta_request'
@@ -82,6 +82,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
+  gem 'guard-ctags-bundler'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
