@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0.rc2'
+gem 'rails', '~> 4.2', '>= 4.2.8'
 
 # Slim
 gem "slim-rails"
@@ -14,6 +14,9 @@ gem 'faker'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
 group :development do
+
+  # Generate ERD(Entity Relationship Diagram)
+  gem 'rails-erd'
   # Brakeman check the Rails application security vulnerabilities
   gem 'brakeman', :require => false
 

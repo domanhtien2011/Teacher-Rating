@@ -2,128 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e26a76d9-832c-4c68-b24d-7f349ec3256c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/welcome.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/welcome/index.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/welcome/search.html.haml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/mailer/password_change.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20151228064436_add_department_to_teachers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20160105070602_add_full_name_to_teachers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/actionmailer-4.2.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/actionpack-4.2.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/actionview-4.2.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/activejob-4.2.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/activemodel-4.2.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/activerecord-4.2.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/activesupport-4.2.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/arel-6.0.3.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/autoprefixer-rails-6.2.3.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/bcrypt-3.1.10.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/bootstrap-sass-3.3.6.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/builder-3.2.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/byebug-8.2.1.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/coffee-rails-4.1.1.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/coffee-script-source-1.10.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/concurrent-ruby-1.0.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/devise-3.5.3.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/elasticsearch-1.0.15.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/elasticsearch-api-1.0.15.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/elasticsearch-transport-1.0.15.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/execjs-2.6.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/faraday-0.9.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/globalid-0.3.6.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/haml-4.0.7.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/hashie-3.4.3.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/jbuilder-2.4.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/jquery-rails-4.0.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/json-1.8.3.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/mail-2.6.3.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/materialize-sass-0.97.6.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/mime-types-2.99.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/mini_portile2-2.0.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/minitest-5.8.3.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/multi_json-1.11.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/multipart-post-2.0.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/nokogiri-1.6.7.1.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/orm_adapter-0.5.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/pg-0.18.4.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/rack-1.6.4.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/rails-4.2.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/rails-dom-testing-1.0.7.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/rails-html-sanitizer-1.0.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/railties-4.2.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/rake-10.4.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/rdoc-4.2.1.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/responders-2.1.1.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/sass-3.4.20.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/sass-rails-5.0.4.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/sdoc-0.4.1.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/searchkick-1.1.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/spring-1.6.1.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/sprockets-3.5.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/sprockets-rails-3.0.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/thor-0.19.1.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/thread_safe-0.3.5.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/tilt-2.0.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/turbolinks-2.5.3.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/uglifier-2.7.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/warden-1.2.4.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/web-console-3.0.0.gem" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db/migrate/20151225063827_create_teachers.rb" afterPath="$PROJECT_DIR$/db/migrate/20151229024625_create_teachers.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector/debug_inspector.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector/debug_inspector.bundle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector/debug_inspector.o" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector/debug_inspector.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/lib/debug_inspector.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/lib/debug_inspector.bundle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/_normalize.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elasticsearch-1.7.2.deb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/actioncable-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/actionmailer-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/actionpack-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/actionview-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/activejob-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/activemodel-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/activerecord-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/activesupport-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/arel-7.1.4.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/nio4r-1.2.1.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/rack-2.0.1.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/rack-contrib-1.2.0.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/rails-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/railties-5.0.0.rc2.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/websocket-driver-0.6.5.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/cache/websocket-extensions-0.1.2.gem" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.byebug_history" afterPath="$PROJECT_DIR$/.byebug_history" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Teacher-Rating.iml" afterPath="$PROJECT_DIR$/.idea/Teacher-Rating.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/teachers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/teachers_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/school.rb" afterPath="$PROJECT_DIR$/app/models/school.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/teacher.rb" afterPath="$PROJECT_DIR$/app/models/teacher.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/schools/index.html.haml" afterPath="$PROJECT_DIR$/app/views/schools/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/teachers/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/teachers/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20151225083444_create_ratings.rb" afterPath="$PROJECT_DIR$/db/migrate/20151225083444_create_ratings.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/welcome.rb" afterPath="$PROJECT_DIR$/app/models/welcome.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/byebug" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/byebug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/nokogiri" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/nokogiri" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/rackup" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/rackup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/rails" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/rails" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/rake" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sass" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sass-convert" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sass-convert" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/scss" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sdoc" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sdoc-merge" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sdoc-merge" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/spring" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/spring" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sprockets" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/sprockets" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/thor" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/thor" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/tilt" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bin/tilt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/specifications/debug_inspector-0.0.2.gemspec" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/specifications/debug_inspector-0.0.2.gemspec" />
     </list>
     <ignored path="Teacher-Rating.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -159,68 +69,7 @@
     <favorites_list name="Teacher-Rating" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="_navbar.html.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/welcome.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teacher.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/teacher.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/welcome/search.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="2" column="73" lean-forward="true" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -288,8 +137,11 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1024" />
-    <option name="height" value="640" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -308,6 +160,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -376,7 +229,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -610,24 +462,34 @@
       <workItem from="1486323297664" duration="716000" />
       <workItem from="1488279391185" duration="2890000" />
       <workItem from="1488283411057" duration="3570000" />
+      <workItem from="1488653062330" duration="929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31053000" />
+    <option name="totallyTimeSpent" value="31982000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1024" height="640" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24948025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3269565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.229927" sideWeight="0.508316" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32586557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22934888" sideWeight="0.508316" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975206" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5304348" sideWeight="0.491684" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52953154" sideWeight="0.491684" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54608697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -656,14 +518,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/welcome.rb</url>
-          <line>8</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -685,13 +540,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" />
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="96" column="30" lean-forward="false" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
     <entry file="file://$PROJECT_DIR$/app/views/schools/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -709,13 +558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" />
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -726,22 +569,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" />
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" />
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
@@ -883,17 +714,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -918,8 +742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/search.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="73" lean-forward="true" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
+        <state relative-caret-position="136">
+          <caret line="2" column="73" lean-forward="false" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -932,34 +756,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/models/welcome.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="339">
           <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/welcome.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="68">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding />
         </state>
       </provider>

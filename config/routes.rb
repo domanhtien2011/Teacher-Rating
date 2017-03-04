@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get '/welcome', to: 'welcome#index'
 
-  get'/welcome/search', to: 'welcome#search'
+  get '/welcome/search', to: 'welcome#search'
 
   resources :schools do
     resources :teachers

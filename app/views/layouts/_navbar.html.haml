@@ -13,7 +13,7 @@
       %li.nav-item
         %a.nav-link.disabled{:href => "#"} Disabled
 
-    = form_tag('welcome/search', method: :get, class: 'form-inline my-2 my-lg-0') do
+    = form_tag(welcome_search_path, method: :get, class: 'form-inline my-2 my-lg-0') do
       = text_field_tag 'search', params[:search], placeholder: 'Nhap ten truong hoac ten cua thay co...', class: 'form-control mr-sm-2'
       %button.btn.btn-outline-success.my-2.my-sm-0{:type => "submit"} Search
 

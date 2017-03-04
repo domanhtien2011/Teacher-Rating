@@ -1,6 +1,8 @@
 class Teacher < ActiveRecord::Base
   belongs_to :school
   has_many :ratings
+  
+  validates_uniqueness_of :first_name, :last_name, :middle_name
 
   def full_name
     "#{last_name} #{middle_name} #{first_name}"
