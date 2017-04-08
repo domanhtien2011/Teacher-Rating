@@ -2,7 +2,7 @@ development:
   adapter:  postgresql
   encoding: utf8
   pool: 5
-  username: tien
+  username: postgres 
   password: password
   database: teachearRating_development
   timeout: 5000

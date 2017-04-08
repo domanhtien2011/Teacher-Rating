@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2', '>= 4.2.8'
+gem 'rails', '~> 5.1.0.rc1'
+
+gem 'jquery-rails'
 
 # Slim
 gem "slim-rails"
@@ -32,11 +34,6 @@ group :development do
 
   gem 'rails-footnotes'
 
-  # Meta Requests to Work with Rails Panel in Google Chrome
-  gem 'meta_request'
-
-  gem 'quiet_assets'
-
 end
 # Awesome Print
 gem "awesome_print", require:"ap"
@@ -59,8 +56,6 @@ gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

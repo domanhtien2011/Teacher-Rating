@@ -30,6 +30,14 @@
       <explain-plan-config>
         <provider>com.intellij.database.plan.sqlite.SqliteExplainPlanProvider</provider>
       </explain-plan-config>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-9.4-1201.jdbc4.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-driver-license.txt</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

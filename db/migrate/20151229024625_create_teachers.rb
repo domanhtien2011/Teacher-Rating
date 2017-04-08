@@ -6,6 +6,7 @@ class CreateTeachers < ActiveRecord::Migration
       t.string :last_name
       t.string :middle_name
       t.string :department
+      t.boolean :is_vietnamese, default: true
       t.references :school, index: true
 
       t.timestamps null: false
